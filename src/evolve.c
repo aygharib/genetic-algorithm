@@ -17,7 +17,7 @@ static int compareIndividualFitness(const void* a, const void* b) {
     }
 }
 
-PPM_IMAGE *evolve_image(const PPM_IMAGE *image, int num_generations, int population_size, double rate) {
+PPM_IMAGE* evolve_image(const PPM_IMAGE *image, int num_generations, int population_size, double rate) {
     srand(time(NULL));
 
     Individual* population = generate_population(population_size, image->width, image->height, image->max_color);
@@ -50,7 +50,7 @@ PPM_IMAGE *evolve_image(const PPM_IMAGE *image, int num_generations, int populat
     return final;
 }
 
-void free_image(PPM_IMAGE *p) {
+void free_image(PPM_IMAGE* p) {
     free(p->data);
     free(p);
 }

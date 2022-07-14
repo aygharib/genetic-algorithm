@@ -2,7 +2,7 @@
 #include "a4.h"
 #include <stdlib.h>
 
-void recombine(Individual *parent1, Individual *parent2, Individual *child1, Individual *child2) {
+void recombine(Individual* parent1, Individual* parent2, Individual* child1, Individual* child2) {
   // Generate a random number between 0 and image size-1
   int image_size = parent1->image.width * parent1->image.height;
   int crossover = rand() % image_size;
@@ -22,7 +22,7 @@ void recombine(Individual *parent1, Individual *parent2, Individual *child1, Ind
   }
 }
 
-void crossover(Individual *population, int population_size) {
+void crossover(Individual* population, int population_size) {
   
   for (int i = 0; i < population_size / 2; i += 2)
     // parent i and i+1 produce children population_size/2+i and

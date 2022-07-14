@@ -27,7 +27,7 @@ PPM_IMAGE* read_ppm(const char* file_name) {
     image->width = atoi(temporaryWord);
 
     safe_fscanf(fp, temporaryWord);
-    image->height =  atoi(temporaryWord);
+    image->height = atoi(temporaryWord);
 
     safe_fscanf(fp, temporaryWord);
     image->max_color = atoi(temporaryWord);
