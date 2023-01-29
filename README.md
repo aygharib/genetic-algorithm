@@ -10,3 +10,6 @@ graphically reconstructs any `*.ppm` image
 ## changes in the future
 - add unit and e2e testing
 - display benchmarks to the user
+
+## Links
+- https://en.wikipedia.org/wiki/Genetic_algorithm
